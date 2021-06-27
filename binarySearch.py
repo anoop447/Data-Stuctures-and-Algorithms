@@ -8,13 +8,13 @@ def binary_search(key,arr):
     while low <= high:
         mid = low + (high-low) // 2
 
-        if arr[mid] == key:
+        if key == arr[mid]:
             return mid
 
-        elif arr[mid] < key:
+        elif key > arr[mid]:
             low = mid + 1
 
-        elif arr[mid] > key:
+        elif key < arr[mid]:
             high = mid - 1
             
 
